@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Fork | Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+  <div class="bg-emerald-950 text-emerald-100 text-xs py-2 text-center font-medium">
+    <span class="bg-emerald-800 text-emerald-100 px-2 py-0.5 rounded-full font-bold uppercase mr-2">Special Offer</span>
+    Claim your <strong>FREE First Meal</strong> when you subscribe today! 
+    <a href="index.html#pricing" class="underline hover:text-white font-bold ml-2">View Plans &rarr;</a>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2.5 font-bold text-xl text-slate-900">
+        <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <span>Taste<span class="text-emerald-600">Theory</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="index.html#home" class="text-emerald-600">Home</a>
+        <a href="index.html#about" class="hover:text-slate-900">About</a>
+        <a href="index.html#meals" class="hover:text-slate-900">Meals</a>
+        <a href="index.html#how-it-works" class="hover:text-slate-900">How It Works</a>
+        <a href="index.html#pricing" class="hover:text-slate-900">Pricing</a>
+        <a href="index.html#gallery" class="hover:text-slate-900">Gallery</a>
+        <a href="index.html#contact" class="hover:text-slate-900">Contact</a>
+      </nav>
+      <a id="loginPortalBtn" href="login.html" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white hover:bg-slate-800">
+        Login
+      </a>
+    </div>
+  </header>
+
+  <main class="min-h-screen flex items-center justify-center py-20">
+    <div class="w-full max-w-xl rounded-[2rem] bg-white border border-slate-200 shadow-xl p-10">
+      <div class="mb-8 text-center">
+        <p class="text-sm uppercase tracking-[0.3em] text-emerald-600 font-semibold">Welcome back</p>
+        <h1 class="mt-3 text-3xl font-extrabold text-slate-900">Login to your Golden Fork portal</h1>
+        <p id="planSelectedMessage" class="mt-3 text-sm text-slate-600 hidden"></p>
+        <p id="loginIntro" class="mt-3 text-sm text-slate-600">Enter your email and password to continue and access your meal plan.</p>
+      </div>
+
+      <form id="loginForm" class="space-y-5">
+        <div>
+          <label for="loginEmail" class="block text-sm font-medium text-slate-700">Email</label>
+          <input id="loginEmail" name="loginEmail" type="email" required class="mt-2 w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500">
+        </div>
+        <div>
+          <label for="loginPassword" class="block text-sm font-medium text-slate-700">Password</label>
+          <input id="loginPassword" name="loginPassword" type="password" required class="mt-2 w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500">
+        </div>
+        <button type="submit" class="w-full rounded-2xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800">Login</button>
+      </form>
+
+      <div id="loginStatus" class="hidden rounded-3xl border border-emerald-200 bg-emerald-50 p-5 mt-6">
+        <p class="text-sm text-slate-900">You are logged in as <span id="userInitialsLabel" class="font-semibold"></span>.</p>
+        <button type="button" onclick="logoutUser('index.html')" class="mt-4 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800">Logout</button>
+      </div>
+
+      <p class="mt-6 text-center text-sm text-slate-600">Need help? Contact us at <a href="mailto:hello@goldenfork.com" class="text-emerald-600 hover:underline">hello@goldenfork.com</a>.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

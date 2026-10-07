@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Fork | AI-Powered Meal Subscription</title>
+    <!-- Local Tailwind CSS build -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <!-- Top Announcement Banner -->
+    <div class="bg-emerald-950 text-emerald-100 text-xs py-2 text-center font-medium">
+        <span class="bg-emerald-800 text-emerald-100 px-2 py-0.5 rounded-full font-bold uppercase mr-2">Special Offer</span>
+        Claim your <strong>FREE First Meal</strong> when you subscribe today! 
+        <a href="#pricing" class="underline hover:text-white font-bold ml-2">View Plans &rarr;</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2.5 font-bold text-xl text-slate-900">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <span>Golden<span class="text-emerald-600">Fork</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+                <a href="#home" class="nav-link text-emerald-600 font-semibold">Home</a>
+                <a href="#about" class="nav-link text-slate-600 hover:text-slate-900">About</a>
+                <a href="#meals" class="nav-link text-slate-600 hover:text-slate-900">Meals</a>
+                <a href="#how-it-works" class="nav-link text-slate-600 hover:text-slate-900">How It Works</a>
+                <a href="#pricing" class="nav-link text-slate-600 hover:text-slate-900">Pricing</a>
+                <a href="#gallery" class="nav-link text-slate-600 hover:text-slate-900">Gallery</a>
+                <a href="#contact" class="nav-link text-slate-600 hover:text-slate-900">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#ai-planner" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100">
+                    <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> AI Meal Quiz
+                </a>
+                <a id="loginPortalBtn" href="login.html" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white hover:bg-slate-800">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-emerald-400 text-xs font-medium">
+                    <i class="fa-solid fa-sparkles"></i> AI-Powered Personalization & Daily Home Delivery
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">
+                    Healthy Meals, <span class="text-emerald-400">AI Personalized</span> Delivered Everyday.
+                </h1>
+                <p class="text-slate-300 text-lg">
+                    Golden Fork uses advanced AI to craft daily, chef-prepared meal plans tailored specifically to your diet, health targets, and taste preferences.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#ai-planner" class="px-7 py-4 rounded-xl font-bold text-sm bg-emerald-500 text-slate-950 hover:bg-emerald-400 shadow-lg">
+                        Generate Your AI Meal Plan &rarr;
+                    </a>
+                    <a href="#pricing" class="px-6 py-4 rounded-xl font-semibold text-sm bg-slate-800 text-slate-100 border border-slate-700">
+                        Subscribe (Free First Meal)
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 bg-slate-800 rounded-2xl p-5 border border-slate-700 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" alt="Grilled Chicken Bowl" class="w-full h-60 object-cover rounded-xl">
+                <div class="mt-4 p-4 bg-slate-900 rounded-xl flex items-center justify-between">
+                    <div>
+                        <h4 class="font-bold text-white">Grilled Chicken & Quinoa Bowl</h4>
+                        <span class="text-xs text-slate-400">Protein: 48g | Carbs: 35g | Fats: 16g</span>
+                    </div>
+                    <span class="text-amber-400 font-mono font-bold">520 kcal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-2 items-center">
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold uppercase tracking-wide">
+                        <i class="fa-solid fa-leaf"></i> Fresh ingredients, smart planning
+                    </span>
+                    <h2 class="text-4xl font-extrabold text-slate-900">About Golden Fork</h2>
+                    <p class="text-slate-600 text-lg leading-8">Golden Fork combines AI-powered nutrition planning with chef-crafted meals to simplify healthy eating. We tailor every delivery to your goals, tastes, and dietary needs so you can enjoy better food without the work.</p>
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                            <h3 class="font-semibold text-slate-900 mb-2">Personalized Meals</h3>
+                            <p class="text-sm text-slate-600">AI curates each menu based on your preferences, macros, and schedule.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                            <h3 class="font-semibold text-slate-900 mb-2">Daily Fresh Delivery</h3>
+                            <p class="text-sm text-slate-600">Chef-prepared meals arrive ready to eat, every day with contactless delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-lg bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=900" alt="Healthy meal delivery" class="w-full h-full min-h-[360px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Success Stories Section -->
+    <section id="success-stories" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900">Customer Success Stories</h2>
+                <p class="text-slate-600 mt-2">Real customers sharing how Golden Fork helped them eat better, save time, and feel stronger.</p>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <p class="text-slate-500 text-sm mb-4">“Golden Fork simplified my week. The meals arrive fresh, taste amazing, and keep me on track with my goals.”</p>
+                    <div class="text-slate-900 font-semibold">Aisha, Nutrition Enthusiast</div>
+                    <div class="text-xs text-slate-400 mt-1">Lost 6kg in 2 months</div>
+                </div>
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <p class="text-slate-500 text-sm mb-4">“The AI plan matched my preferences perfectly, and I now have more energy throughout the day.”</p>
+                    <div class="text-slate-900 font-semibold">Rahul, Busy Professional</div>
+                    <div class="text-xs text-slate-400 mt-1">Improved daily focus</div>
+                </div>
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <p class="text-slate-500 text-sm mb-4">“Golden Fork made healthy eating effortless. The flavors are fresh and I never worry about cooking.”</p>
+                    <div class="text-slate-900 font-semibold">Meera, Wellness Seeker</div>
+                    <div class="text-xs text-slate-400 mt-1">Saved 7 hours per week</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Meal Quiz Section -->
+    <section id="ai-planner" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900">AI Meal Quiz</h2>
+                <p class="text-slate-600 mt-2">Answer a few quick questions and receive a personalized meal plan recommendation.</p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-2 items-start">
+                <form id="aiQuizForm" class="space-y-6 bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+                    <div>
+                        <label for="dietPreference" class="block text-sm font-medium text-slate-700">Diet Preference</label>
+                        <select id="dietPreference" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500">
+                            <option value="Balanced">Balanced</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="High Protein">High Protein</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="healthGoal" class="block text-sm font-medium text-slate-700">Health Goal</label>
+                        <select id="healthGoal" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500">
+                            <option value="Maintain Weight">Maintain Weight</option>
+                            <option value="Lose Weight">Lose Weight</option>
+                            <option value="Build Muscle">Build Muscle</option>
+                            <option value="Improve Energy">Improve Energy</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dailyCalories" class="block text-sm font-medium text-slate-700">Daily Calorie Target</label>
+                        <input id="dailyCalories" type="number" min="1200" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500" placeholder="e.g. 2000 kcal">
+                        <p class="text-xs text-slate-500 mt-2">Enter the calories you want to eat each day. Leave empty for an AI estimate based on your goal.</p>
+                    </div>
+                    <div>
+                        <label for="allergies" class="block text-sm font-medium text-slate-700">Allergies / Food Avoidances</label>
+                        <input id="allergies" type="text" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500" placeholder="e.g. nuts, dairy, gluten">
+                    </div>
+                    <div>
+                        <label for="mealFrequency" class="block text-sm font-medium text-slate-700">Meals Per Day</label>
+                        <select id="mealFrequency" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500">
+                            <option value="2 Meals">2 Meals</option>
+                            <option value="3 Meals">3 Meals</option>
+                            <option value="4 Meals">4 Meals</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="generateAIPlan()" class="w-full rounded-2xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-500">Get My AI Plan</button>
+                </form>
+                <div class="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white">
+                    <h3 class="font-semibold text-xl mb-4">Why this quiz helps</h3>
+                    <p class="text-slate-300">Our AI uses your preferences, goals, and dietary needs to create meals that feel personal, balanced, and easy to enjoy.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3"><span class="text-emerald-400">✓</span> Faster plan creation</li>
+                        <li class="flex items-center gap-3"><span class="text-emerald-400">✓</span> Customized nutrition profile</li>
+                        <li class="flex items-center gap-3"><span class="text-emerald-400">✓</span> Built around your taste buds</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="aiPlanResult" class="mt-10 hidden max-w-6xl mx-auto rounded-3xl border border-emerald-200 bg-emerald-50 p-8 text-slate-900">
+                <h3 class="text-2xl font-bold mb-3">Your Personalized Diet Plan</h3>
+                <p class="text-sm text-slate-700 mb-4">Complete the quiz and click "Get My AI Plan" to see your tailored meal guide.</p>
+                <div class="space-y-3" id="aiPlanContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Meals Section -->
+    <section id="meals" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">Popular Chef & AI Created Meals</h2>
+                <p class="text-slate-600 mt-2">Nutritionally balanced, cooked fresh with 100% organic ingredients.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button onclick="filterMeals(this, 'All')" class="meal-filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white">All</button>
+                <button onclick="filterMeals(this, 'Vegetarian')" class="meal-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border">Vegetarian</button>
+                <button onclick="filterMeals(this, 'Vegan')" class="meal-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border">Vegan</button>
+                <button onclick="filterMeals(this, 'High Protein')" class="meal-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border">High Protein</button>
+            </div>
+
+            <!-- Meals Grid -->
+            <div id="mealsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Injected dynamically via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900">How It Works</h2>
+                <p class="text-slate-600 mt-2">Three simple steps to get personalized meals delivered daily.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3 text-center">
+                <div class="p-6 border border-slate-200 rounded-3xl bg-slate-50">
+                    <div class="text-emerald-500 text-3xl mb-4">1</div>
+                    <h3 class="font-semibold text-slate-900 mb-2">Tell Us Your Preferences</h3>
+                    <p class="text-sm text-slate-600">Share your taste, goals, and dietary needs in seconds.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-3xl bg-slate-50">
+                    <div class="text-emerald-500 text-3xl mb-4">2</div>
+                    <h3 class="font-semibold text-slate-900 mb-2">AI Builds Your Meal Plan</h3>
+                    <p class="text-sm text-slate-600">Our system crafts balanced meals that fit your schedule and nutrition targets.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-3xl bg-slate-50">
+                    <div class="text-emerald-500 text-3xl mb-4">3</div>
+                    <h3 class="font-semibold text-slate-900 mb-2">Delivered Fresh Every Day</h3>
+                    <p class="text-sm text-slate-600">Enjoy chef-prepared meals at home with reliable daily delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-white">Transparent Subscription Plans</h2>
+                <p class="text-slate-300 mt-2">No long-term commitments or hidden fees. Includes free daily delivery.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 space-y-6">
+                    <h3 class="text-2xl font-bold">Starter Plan</h3>
+                    <div class="text-4xl font-extrabold font-mono text-white">Rs 4,999 <span class="text-sm font-normal text-slate-400">/ month</span></div>
+                    <ul class="text-xs space-y-3 text-slate-300">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> 1 Freshly prepared meal per day</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Free daily contactless delivery</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Order between 11 AM – 9 PM</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Mobile app support</li>
+                    </ul>
+                    <button onclick="subscribePlan('Starter Plan')" class="w-full py-3.5 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold text-xs uppercase">
+                        Subscribe Starter
+                    </button>
+                </div>
+
+                <!-- Complete Plan -->
+                <div class="bg-slate-800 p-8 rounded-3xl border-2 border-emerald-500 relative space-y-6">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 px-3 py-0.5 rounded-full text-xs font-bold uppercase">Most Popular</span>
+                    <h3 class="text-2xl font-bold">Complete Plan</h3>
+                    <div class="text-4xl font-extrabold font-mono text-white">Rs 7,999 <span class="text-sm font-normal text-slate-400">/ month</span></div>
+                    <ul class="text-xs space-y-3 text-slate-300">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> 2 Gourmet meals per day (Lunch & Dinner)</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Free priority delivery & 24/7 ordering</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Advanced AI macro tracking & allergy engine</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Eco-friendly reusable thermal packaging</li>
+                    </ul>
+                    <button onclick="subscribePlan('Complete Plan')" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs uppercase shadow-lg">
+                        Subscribe Complete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900">Gallery</h2>
+                <p class="text-slate-600 mt-2">A curated taste of our chef-crafted meals and delivery experience.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=800" alt="Fresh meal tray" class="w-full h-56 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800" alt="Healthy salad" class="w-full h-56 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" alt="Colorful meal bowl" class="w-full h-56 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800" alt="Prepared dinner plate" class="w-full h-56 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1495195134817-aeb325a55b65?auto=format&fit=crop&q=80&w=800" alt="Meal delivery box" class="w-full h-56 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800" alt="Fresh ingredients" class="w-full h-56 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900">Contact</h2>
+                <p class="text-slate-600 mt-2">Have a question or want help choosing a plan? Reach out and we’ll reply within one business day.</p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-2 items-start">
+                <div class="grid gap-4">
+                    <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:bg-white">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-500 text-white mb-4">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-900 mb-2">Customer Support</h3>
+                        <p class="text-sm text-slate-600">Email us at <a href="mailto:hello@goldenfork.com" class="text-emerald-600 hover:underline">hello@goldenfork.com</a></p>
+                        <p class="text-sm text-slate-600">Call us at <a href="tel:+918967456267" class="text-emerald-600 hover:underline">+91 89674 56267</a></p>
+                        <p class="text-sm text-slate-600">Delivery & account questions answered every day from 9 AM to 9 PM.</p>
+                    </div>
+                    <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:bg-white">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-slate-900 text-white mb-4">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-900 mb-2">Our Address</h3>
+                        <p class="text-sm text-slate-600">818 Shree Nagar, Nagpur, Maharashtra 440015</p>
+                        <p class="text-sm text-slate-600 mt-2">Visit us for menu assistance, pickup support, and local delivery updates.</p>
+                    </div>
+                    <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:bg-white">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 mb-4">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-900 mb-2">Quick Response</h3>
+                        <p class="text-sm text-slate-600">We aim to reply to every contact request within one business day.</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="space-y-5 bg-slate-50 rounded-3xl border border-slate-200 p-6">
+                    <div>
+                        <label for="contactName" class="block text-sm font-medium text-slate-700">Name</label>
+                        <input id="contactName" type="text" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="contactEmail" class="block text-sm font-medium text-slate-700">Email</label>
+                        <input id="contactEmail" type="email" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="contactMessage" class="block text-sm font-medium text-slate-700">Message</label>
+                        <textarea id="contactMessage" rows="4" class="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-500 focus:ring-emerald-500" placeholder="Tell us what you need."></textarea>
+                    </div>
+                    <div id="contactResult" class="hidden rounded-3xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800"></div>
+                    <button type="submit" class="w-full rounded-2xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-500 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <p class="font-bold text-white text-lg">Golden Fork - AI Meal Subscription</p>
+            <p class="text-xs">Address: 818 Shree Nagar, Nagpur India - 440015 | Phone: 8967456267 | Email: hello@goldenfork.com</p>
+            <p class="text-[11px] text-slate-500">© 2026 Golden Fork Inc. Built for Professor Academic Demonstration.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
